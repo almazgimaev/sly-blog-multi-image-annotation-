@@ -18,7 +18,7 @@ Moreover, training models on annotated images from multiple viewpoints allows th
 
 ✅ Multiview annotation can reduce the amount of time and money used to create the needed annotations for training images. While machine learning models must be trained using many thousands of pictures that are manually annotated, multiview annotations only requires a few pictures to be hand labeled in order to automatically label hundreds more.
 
-![](multi-view-annotated-images.png)
+![](beetles2.png)
 
 # Choosing the Right Annotation Tools
 
