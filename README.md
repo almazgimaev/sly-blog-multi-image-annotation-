@@ -45,8 +45,6 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 
 ### Option 2. Import labeled data and assign tags
 
- If you already have the labeled data — just upload it into Supervisely platform using another import Supervisely Apps from our Ecosystem. You will find there the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
-
  If you already have the labeled data — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps]( https://ecosystem.supervisely.com/import) from our Ecosystem. You will find there the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
 
  <div class="apps-grid">
@@ -59,9 +57,11 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
  > You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️.
 
 
-## Step 2. Explore images in advanced Supervisely labeling tool
+## Step 2. Explore images in the advanced Supervisely labeling tool
 
-✨ Our Supervisely labeling tool offers an intuitive interface for ease of use. Below is a brief overview.
+✨ **Supervisely advanced labeling tool** offers an intuitive interface for ease of use. Below is a brief overview.
+
+---- тут картинка интерфейса с сеткой из картинок ----
 
 Here's an explanation of what you see in the image:
 
@@ -86,6 +86,8 @@ Easily switch the option and select one of the tags you created and assigned bef
 ## Step 4. Start labeling grouped images
 
 Now your images are grouped based on specific characteristics, annotating them becomes more manageable. 
+
+--- тут можно еще анимашку переключения между разными тэгами группировок -----
 
 ### Option 1. Fast labeling with interactive AI assistance
 
@@ -138,7 +140,7 @@ Labeling Jobs and other collaboration tools in Supervisely helps to organize eff
 
 3. Access permissions - limiting access only to specific datasets and classes within a single job
 
-4, And what's more, you can take a screenshot for urgent tasks without using additional apps and quickly share the link.
+4. And what's more, you can take a screenshot for urgent tasks without using additional apps and quickly share the link.
 
 
 ## Export data
