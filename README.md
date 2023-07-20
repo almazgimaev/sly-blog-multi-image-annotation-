@@ -98,7 +98,7 @@ As you have already noticed, it is useful not only to annotate the data but also
 In this use case, tags also **crucial**. It simplify the task of multi-image annotation.
 
 ![](./tags.png)
---- КОММЕНТ: тут красивый скрин по тэгам ![](./tags.png) ----
+--- КОММЕНТ: тут красивый скрин по тэгам ----
 
 In data tabs, you can find and change **properties for objects, shapes, and images**. For example, you can set the shape type or add a new tag.
 
