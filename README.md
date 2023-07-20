@@ -12,11 +12,13 @@ date: 2023-07-21T12:17:00
 
 # Importance of Multi-View Image Annotation for efficient model training
 
-As the demand for high-quality object detection, recognition, and segmentation on images increases, the need for well-annotated datasets becomes crucial. To ensure the quality and effectiveness of computer vision model training, datasets with objects captured in different states and forms, from various viewpoints, are essential. Such datasets enable learning algorithms to better comprehend and generalize visual data, as well as identify specific object features, leading to improved recognition accuracy. 
-
-Moreover, training models on annotated images from multiple viewpoints allows them to handle real-life scenarios with diverse object placements and orientations.
+As the demand for high-quality object detection, recognition, and segmentation on images increases, the need for well-annotated datasets becomes crucial. To ensure the quality and effectiveness of computer vision model training, datasets with objects captured in different states and forms, from various viewpoints, are essential. 
 
 ![](beetles2.png)
+
+✅ Such datasets enable learning algorithms to better comprehend and generalize visual data, as well as identify specific object features, leading to improved recognition accuracy. 
+
+✅ Moreover, training models on annotated images from multiple viewpoints allows them to handle real-life scenarios with diverse object placements and orientations.
 
 ✅ Multiview annotation can reduce the amount of time and money used to create the needed annotations for training images. While machine learning models must be trained using many thousands of pictures that are manually annotated, multiview annotations only requires a few pictures to be hand labeled in order to automatically label hundreds more.
 
@@ -100,7 +102,7 @@ In this use case, tags also **crucial**. It simplify the task of multi-image ann
 
 In data tabs, you can find and change **properties for objects, shapes, and images**. For example, you can set the shape type or add a new tag.
 
-{% hint style="success" %}
+{% hint style="info" %}
 You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️
 {% endhint %}
 
@@ -130,6 +132,7 @@ You can run multiple models simultaneously for different input data and quickly 
   2. Deploy one of our pre-trained recognition models (your own model or models we prepared in Ecosystem).
   Here are some of popular model.
 
+  --- КОММЕНТ: тут ускоренная анимация как создаются объекты при помощи смарт тулы ----------
 
 ### Option 2. Manual annotation (creating rectangle, bitmap, polyline, polygon, or point)
 
@@ -144,7 +147,7 @@ It's convenient to use the **Rectangle Tool** if you only want to mark an object
 
 ## Collaborative teamwork
 
-Distribute annotation work between colleagues using labeling jobs.
+Distribute annotation work between colleagues using [labeling jobs](https://docs.supervisely.com/labeling/jobs).
 
 Labeling Jobs and other collaboration tools in Supervisely helps to organize efficient work and complete the tasks like:
 
