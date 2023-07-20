@@ -28,7 +28,7 @@ For this purpose, **Supervisely's advanced labeling tool** offers an additional 
 In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
 
 ---- тут видео ------
-<!-- <embed-youtube id="1rFeUfmT20k"></embed-youtube> -->
+<!-- КОММЕНТ: <embed-youtube id="1rFeUfmT20k"></embed-youtube> -->
 
 
 ## Step 1. Prepare data for labeling
@@ -55,17 +55,19 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 </div>
 
  - **Required step**: Create 1 or more tags with the `any_string` type in the project settings and assign each image with the value of the group name you want to distribute them into (tags allow us enable grouping images in labeling tool).
- > You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️.
 
+ > You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️.
 
 ## Step 2. Explore images in the advanced Supervisely labeling tool
 
 ![](./adv_lbl_tool.gif)
 
+{% hint style="success" %}
 ✨ **Supervisely advanced labeling tool** offers an intuitive interface for ease of use. Below is a brief overview.
+{% endhint %}
 
 ![](./interface.jpg)
----- тут классная картинка интерфейса с сеткой из картинок ----
+---- КОММЕНТ: тут классная картинка интерфейса с сеткой из картинок ----
 
 Here's an explanation of what you see in the image:
 
@@ -86,23 +88,28 @@ The interface is fully customizable. If you're not satisfied with the default la
 Easily switch the option and select one of the tags you created and assigned before. Images will quickly arrange into a grid, grouped by tag values.
 
 ![](./enable_group.gif)
--- тут быстрая анимашка как включить эту опцию ----
+-- КОММЕНТ: тут быстрая анимашка как включить эту опцию ----
 
 ## Tags and Properties
 As you have already noticed, it is useful not only to annotate the data but also to add tags that **highlight the properties** of objects. 
 
-In this use case, tags also crucial and simplify the task of multi-image annotation.
+In this use case, tags also **crucial**. It simplify the task of multi-image annotation.
 
 ![](./tags.png)
-<!-- --- тут красивый скрин по тэгам ![](./tags.png) ---- -->
+--- КОММЕНТ: тут красивый скрин по тэгам ![](./tags.png) ----
 
-In data tabs, you can find and change **Properties** for objects, shapes, and images. For example, you can change the shape type or add a new tag, and change the layer order for overlapping objects to control their visibility.
+In data tabs, you can find and change **properties for objects, shapes, and images**. For example, you can set the shape type or add a new tag.
+
+{% hint style="success" %}
+You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️
+{% endhint %}
+
+--- КОММЕНТ: тут можно еще анимашку переключения между разными тэгами группировок -----
 
 ## Step 4. Start labeling grouped images
 
 Now your images are grouped based on specific characteristics, annotating them becomes more manageable. 
 
---- тут можно еще анимашку переключения между разными тэгами группировок -----
 
 ### Option 1. Fast labeling with interactive AI assistance
 
@@ -132,7 +139,7 @@ The **Polygon Tool** is used for annotating Polygon shapes on images if you don'
 
 It's convenient to use the **Rectangle Tool** if you only want to mark an object without defining its outline.
 
- --- тут ускоренная анимация как создаются 2-3 типа простых объектов (например бокс и маска) ----------
+ --- КОММЕНТ: тут ускоренная анимация как создаются 2-3 типа простых объектов (например бокс и маска) ----------
 
 
 ## Collaborative teamwork
