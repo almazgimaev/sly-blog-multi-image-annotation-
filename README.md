@@ -64,6 +64,7 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 
 ✨ **Supervisely advanced labeling tool** offers an intuitive interface for ease of use. Below is a brief overview.
 
+![](./interface.jpg)
 ---- тут классная картинка интерфейса с сеткой из картинок ----
 
 Here's an explanation of what you see in the image:
