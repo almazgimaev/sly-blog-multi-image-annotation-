@@ -60,7 +60,7 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 
 ## Step 2. Explore images in the advanced Supervisely labeling tool
 
-![](adv_lbl_tool.gif)
+![](./adv_lbl_tool.gif)
 
 ✨ **Supervisely advanced labeling tool** offers an intuitive interface for ease of use. Below is a brief overview.
 
