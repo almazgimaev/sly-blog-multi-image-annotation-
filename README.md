@@ -64,7 +64,7 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 
 ✨ **Supervisely advanced labeling tool** offers an intuitive interface for ease of use. Below is a brief overview.
 
----- тут картинка интерфейса с сеткой из картинок ----
+---- тут классная картинка интерфейса с сеткой из картинок ----
 
 Here's an explanation of what you see in the image:
 
@@ -84,6 +84,7 @@ The interface is fully customizable. If you're not satisfied with the default la
 
 Easily switch the option and select one of the tags you created and assigned before. Images will quickly arrange into a grid, grouped by tag values.
 
+![](./enable_group.gif)
 -- тут быстрая анимашка как включить эту опцию ----
 
 ## Tags and Properties
