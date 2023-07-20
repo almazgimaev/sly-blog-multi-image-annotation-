@@ -27,8 +27,8 @@ For this purpose, **Supervisely's advanced labeling tool** offers an additional 
 
 In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
 
----- тут видео ------
-<!-- КОММЕНТ: <embed-youtube id="1rFeUfmT20k"></embed-youtube> -->
+---- КОММЕНТ: тут видео ------
+<!-- <embed-youtube id="1rFeUfmT20k"></embed-youtube> -->
 
 
 ## Step 1. Prepare data for labeling
