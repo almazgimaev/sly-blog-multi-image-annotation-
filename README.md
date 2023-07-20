@@ -23,7 +23,7 @@ Moreover, training models on annotated images from multiple viewpoints allows th
 
 # Choosing the Right Annotation Tools
 
-For this purpose, **Supervisely's advanced labeling tool offers an additional option to group images based on a common tag**. This feature simplifies the task by displaying grouped images on a single screen grid, making **manual** and **AI-assisted** annotations more efficient.
+For this purpose, **Supervisely's advanced labeling tool** offers an additional option to **group images based on a common tag**. This feature simplifies the task by displaying grouped images on a single screen grid, making **manual** and **AI-assisted** annotations more efficient.
 
 In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
 
