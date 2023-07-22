@@ -1,6 +1,6 @@
 ---
 title: "Multi-View Image Annotation: prepare multi-view images for efficient model training"
-description: Multi-view image annotation is a highly convenient method for annotating objects in photos from various perspectives.
+description: Boosting objectness with multi-view image annotation as the method for improving computer vision model trainig.
 cover: /blog/multi-view-images-annotation/cover.png
 tags:
     - image annotation
@@ -9,23 +9,42 @@ author: almaz
 date: 2023-07-21T12:17:00
 ---
 
+> INDEX TERM: multi-view image annotation, image annotation, multi-view data, machine learning, computer vision, labeling tool
 
-# Importance of Multi-View Image Annotation for efficient model training
+# Multi-View Image Annotation for Improving Computer Vision Model Training.
 
-As the demand for high-quality object detection, recognition, and segmentation on images increases, the need for well-annotated datasets becomes crucial. To ensure the quality and effectiveness of computer vision model training, datasets with objects captured in different states and forms, from various viewpoints, are essential. 
+or
 
-![](beetles2.png)
+# Multi-View Image Annotation for Boosting Objectness
 
-✅ Such datasets enable learning algorithms to better comprehend and generalize visual data, as well as identify specific object features, leading to improved recognition accuracy. 
+😓 Some Challenges in Computer Vision Model Training:
+- Slow and costly training process due to insufficient annotated data.
+- Train models on typical datasets not addressing real-life problems.
 
-✅ Moreover, training models on annotated images from multiple viewpoints allows them to handle real-life scenarios with diverse object placements and orientations.
+As the applications of computer vision models expand, so do the demands for diverse and high-quality **multi view annotated data** to accelerate training and enhance model performance. It's crucial to train models to recognize objects not just in standard views, but in various **real-world scenarios**, capturing **multiple perspectives** and enabling them to **tackle everyday challenges**.
 
-✅ Multiview annotation can reduce the amount of time and money used to create the needed annotations for training images. While machine learning models must be trained using many thousands of pictures that are manually annotated, multiview annotations only requires a few pictures to be hand labeled in order to automatically label hundreds more.
-
+Instead of manually labeling large datasets, it will be more efficient to prepare a smaller, yet more suitable and diverse set of data from different perspectives.
 
 # Choosing the Right Annotation Tools
 
-For this purpose, **Supervisely's advanced labeling tool** offers an additional option to **group images based on a common tag**. This feature simplifies the task by displaying grouped images on a single screen grid, making **manual** and **AI-assisted** annotations more efficient.
+🌟 **Supervisely's advanced labeling tool** offers a groundbreaking feature that allows you to **group images based on a common tag**. 
+
+✅ This feature simplifies **AI-assisted** or **manual** annotations and makes it more efficient.
+
+✅ Train your models to identify objects from **various angles and properties**, mirroring **real-life scenarios**.
+
+✅ **Easily organize photos** on screen based on relevant tags (assign one or multiple tags on images for each group).
+
+
+![](beetles2.png)
+
+🚀 Such datasets enable learning algorithms to better comprehend and generalize visual data, as well as **identify specific object features**, leading to improved **recognition accuracy**. 
+
+🚀 Training models on annotated images from multiple viewpoints allows them to **handle real-life scenarios** with diverse object placements and orientations.
+
+🚀 **Reduce the amount of time and money** used to create the needed annotations for training images. Multiview annotations only requires a few pictures to be hand labeled in order to automatically label hundreds more.
+
+🚀 Multi-view annotation approach significantly outperforms state-of-the-art labeling methods.
 
 In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
 
@@ -56,7 +75,7 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
     <blog-app github="import-coco/master"></blog-app>
 </div>
 
- - **Required step**: Create 1 or more tags with the `any_string` type in the project settings and assign each image with the value of the group name you want to distribute them into (tags allow us enable grouping images in labeling tool).
+ - **Required step** (for option 2): Create 1 or more tags with the `any_string` type in the project settings and assign each image with the value of the group name you want to distribute them into (tags allow enable grouping images in labeling tool).
 
  > You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️.
 
