@@ -25,6 +25,14 @@ As the applications of computer vision models expand, so do the demands for dive
 
 Instead of manually labeling large datasets, it will be more efficient to prepare a smaller, yet more suitable and diverse set of data from different perspectives.
 
+🚀 Such datasets enable learning algorithms to better comprehend and generalize visual data, as well as **identify specific object features**, leading to improved **recognition accuracy**. 
+
+🚀 Training models on annotated images from multiple viewpoints allows them to **handle real-life scenarios** with diverse object placements and orientations.
+
+🚀 **Reduce the amount of time and money** used to create the needed annotations for training images. Multiview annotations only requires a few pictures to be hand labeled in order to automatically label hundreds more.
+
+🚀 Multi-view annotation approach significantly outperforms state-of-the-art labeling methods.
+
 # Choosing the Right Annotation Tools
 
 🌟 **Supervisely's advanced labeling tool** offers a groundbreaking feature that allows you to **group images based on a common tag**. 
@@ -38,13 +46,6 @@ Instead of manually labeling large datasets, it will be more efficient to prepar
 
 ![](beetles2.png)
 
-🚀 Such datasets enable learning algorithms to better comprehend and generalize visual data, as well as **identify specific object features**, leading to improved **recognition accuracy**. 
-
-🚀 Training models on annotated images from multiple viewpoints allows them to **handle real-life scenarios** with diverse object placements and orientations.
-
-🚀 **Reduce the amount of time and money** used to create the needed annotations for training images. Multiview annotations only requires a few pictures to be hand labeled in order to automatically label hundreds more.
-
-🚀 Multi-view annotation approach significantly outperforms state-of-the-art labeling methods.
 
 In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
 
