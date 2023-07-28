@@ -33,7 +33,7 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 
 ![](yt.png)
 
-## Easily annotate grouped images in Supervisely labeling tool
+## Easily annotate grouped images in Supervisely advanced labeling tool
 
 **⚡ Fast labeling with interactive AI assistance.**
 
@@ -41,11 +41,12 @@ It is hard and time-consuming to segment objects over thousands of frames. Smart
 
 ![](./ai.gif)
 
-✅ Also, you can use shapes such as Bitmap, Polygon, and Rectangle for manual labeling purposes for easily correct some cases.
+✔️ Also, you can use shapes such as Bitmap, Polygon, and Rectangle for manual labeling purposes for easily correct some cases.
 
 ![](./manual.gif)
 
-🤖 Once your images are annotated, you can train model, apply pre-trained model weights and obtain predictions.
+🤖 Once your images are annotated, you can **train model**, **apply pre-trained model weights** and **obtain predictions**. 
+Accurate and robust model significantly speeds up the process of annotation objects in images 👍
 
 ---- (анимации процесса обучения модели и последующего применения) -----
 
