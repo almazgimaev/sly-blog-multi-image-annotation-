@@ -45,8 +45,8 @@ It is hard and time-consuming to segment objects over thousands of frames. Smart
 
 ![](./manual.gif)
 
-🤖 Once your images are annotated, you can **train model**, **apply pre-trained model weights** and **obtain predictions**. 
-Accurate and robust model significantly speeds up the process of annotation objects in images 👍
+🤖 Once your images are annotated, you can ➡️ **train model** ➡️ **apply pre-trained model** ➡️ **obtain predictions**. 
+Accurate and robust model **significantly speeds up the process of annotation** objects in images.
 
 ---- (анимации процесса обучения модели и последующего применения) -----
 
