@@ -6,7 +6,7 @@ tags:
   - image annotation
   - tutorials
 author: almaz
-date: 2023-07-21T12:17:00
+date: 2023-08-3T12:17:00
 ---
 
 # Multi-View Image Annotation for Improving Computer Vision Model Training.
@@ -54,7 +54,7 @@ Run multiple models simultaneously for different input data and quickly switch b
 
 ![](models.png)
 
-### Use the Import images groups app and prepare data for labeling.
+### Use the Import images groups app to prepare data for labeling
 
 - Organize your images into a simple project structure according to the application's [overview description](https://ecosystem.supervisely.com/apps/import-images-groups?_ga=2.53824936.1042633755.1690183817-1574751671.1670221597#Overview).
 
