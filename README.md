@@ -103,7 +103,7 @@ In this use case, tag feature is crucial - it simplify the task of multi-image a
 
 How to organize teamwork and efficiently distribute the annotation process between colleagues? 
 
-✅ Create a team and invite your colleagues to [labeling job](https://docs.supervisely.com/labeling/jobs) to work together on the same project.
+✅ Create a team and invite your colleagues to [labeling job](https://docs.supervisely.com/labeling/jobs), and work together on the same project.
 
 Labeling Jobs and other collaboration tools in Supervisely helps to organize efficient work and complete the tasks like:
 
