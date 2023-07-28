@@ -25,6 +25,8 @@ It is a method that leverages multiple perspectives to **enhance the machine lea
 4. Train your models to identify objects from various angles and properties, mirroring real-life scenarios.
 5. Apply pre-trained model to all images and get predictions ✅
 
+-- заменить схему --
+
 ![](schema.png)
 
 In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
@@ -33,21 +35,21 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 
 ## Easily annotate grouped images in Supervisely labeling tool
 
-**Fast labeling with interactive AI assistance ⚡**
+**⚡ Fast labeling with interactive AI assistance.**
 
 It is hard and time-consuming to segment objects over thousands of frames. Smart Tool helps you easily label the desired object in an image with just a few clicks because it is based on using various pre-trained neuron network (NN) models. All you need to do is frame the presumed object with a bounding box (bbox).
 
 ![](./ai.gif)
 
-Also, you can use shapes such as Bitmap, Polygon, and Rectangle for manual labeling purposes for easily correct some cases ✅.
+✅ Also, you can use shapes such as Bitmap, Polygon, and Rectangle for manual labeling purposes for easily correct some cases.
 
 ![](./manual.gif)
 
-Once your images are annotated, you can train model, apply pre-trained model weights and obtain predictions.
+🤖 Once your images are annotated, you can train model, apply pre-trained model weights and obtain predictions.
 
 ---- (анимации процесса обучения модели и последующего применения) -----
 
-Run multiple models simultaneously for different input data and quickly switch between them - [connecting your computer with GPU](https://youtu.be/aO7Zc4kTrVg) and utilize popular pre-trained models for the Smart Labeling tool to improve efficiency.
+Run multiple models simultaneously for different input data and quickly switch between them - [connecting your computer with GPU](https://youtu.be/aO7Zc4kTrVg) and utilize popular pre-trained models for the Smart Labeling tool to improve efficiency:
 
 ![](models.png)
 
@@ -81,9 +83,10 @@ After importing data, create and **assign tags to each image you want to group**
 
 ### Game-changer features of Supervisely advanced labeling tool
 
+-- тут анимация с демой группировки + парочки других фичей тулы --
 ![](adv_lbl_tool.gif)
 
-The interface is fully customizable. If you're not satisfied with the default layout of the main tabs, you can always switch to the panel variant and rearrange everything according to your convenience. This feature is often lacking in some web applications, which undoubtedly sets our tool apart in terms of usability.
+The Supervisely tool's interface is fully customizable, allowing you to arrange the main tabs according to your convenience, making it highly user-friendly. The use of tags simplifies multi-image annotation, enabling you to group images based on different attributes, similar to filtering on a car sales website.
 
 {% hint style="success" %} ✨ Supervisely advanced labeling tool offers an intuitive interface for ease of use. {% endhint %}
 
@@ -91,6 +94,8 @@ The interface is fully customizable. If you're not satisfied with the default la
 
 Tags are useful not only to annotate the data but also to **highlight the properties of objects or images**.
 In this use case, tag feature is crucial - it simplify the task of multi-image annotation.
+
+![](tags.png)
 
 ### Collaborative teamwork
 
