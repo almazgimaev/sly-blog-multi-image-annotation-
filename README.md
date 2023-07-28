@@ -70,7 +70,7 @@ Run multiple models simultaneously for different input data and quickly switch b
 
 - Or you can use your own data to reproduce this tutorial.
 
-If you already have the labeled data — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps](https://ecosystem.supervisely.com/import) ✅from our Ecosystem. You will find there the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
+If you already have the **labeled data** — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps](https://ecosystem.supervisely.com/import) ✅ from our Ecosystem. You will find there the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
 
 <div class="apps-grid">
     <blog-app github="convert-yolov5-to-supervisely-format/master"></blog-app>
@@ -78,6 +78,7 @@ If you already have the labeled data — just upload it into Supervisely platfor
     <blog-app github="import-coco/master"></blog-app>
 </div>
 
+--- тут иконки прилоежний ---
 ![](importapps.png)
 
 After importing data, create and **assign tags to each image you want to group**. This will simplify the task of multi-image annotation.
@@ -113,6 +114,7 @@ Labeling Jobs and other collaboration tools in Supervisely helps to organize eff
 
 At any moment of the working process, if you want to use these results elsewhere, you can export them using one of Supervisely Apps from Ecosystem. For example, here are just a few popular export Apps from Ecosystem:
 
+--- тут иконки прилоежний экспорта ---
 ![](exportapps.png)
 
  <div class="apps-grid">
