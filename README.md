@@ -13,7 +13,7 @@ date: 2023-08-3T12:17:00
 
 In the world of machine learning, the quest for **more accurate and robust models** continues to drive innovation. One promising approach that has gained considerable attention is **multi-view images annotation**.
 
-It is a method that leverages multiple perspectives to **enhance the machine learning process**. By incorporating multiple perspectives, whether it's different data modalities or diverse feature spaces, multi-view image annotation enable learning algorithms to better comprehend and generalize visual data, as well as **identify specific object features**, leading to improved **recognition accuracy**.
+It is a method that leverages multiple perspectives to **enhance the machine learning process**. By incorporating multiple perspectives, whether it's different data modalities or diverse feature spaces, multi-view image annotation enables learning algorithms to better comprehend and generalize visual data, as well as **identify specific object features**, leading to improved **recognition accuracy**.
 
 🚀 It's crucial to train models to recognize objects not just in standard views, but in various **real-world scenarios**, capturing multiple perspectives and enabling them **to tackle everyday challenges**.
 
@@ -37,16 +37,16 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 
 **⚡ Fast labeling with interactive AI assistance.**
 
-It is hard and time-consuming to segment objects over thousands of frames. Smart Tool helps you easily label the desired object in an image with just a few clicks because it is based on using various pre-trained neuron network (NN) models. All you need to do is frame the presumed object with a bounding box (bbox).
+It is hard and time-consuming to segment objects over thousands of frames. Smart Tool helps you easily label the desired object in an image with just a few clicks because it is based on using various pre-trained neural network (NN) models. All you need to do is frame the presumed object with a bounding box (bbox).
 
 ![](./ai.gif)
 
-✔️ Also, you can use shapes such as Bitmap, Polygon, and Rectangle for manual labeling purposes for easily correct some cases.
+✔️ Also, you can use shapes such as Bitmap, Polygon, and Rectangle for manual labeling purposes to easily correct some cases.
 
 ![](./manual.gif)
 
 🤖 Once your images are annotated, you can ➡️ **train model** ➡️ **apply pre-trained model** ➡️ **obtain predictions**. 
-Accurate and robust model **significantly speeds up the process of annotation** objects in images.
+Accurate and robust models **significantly speed up the process of annotation** objects in images.
 
 ---- (анимации процесса обучения модели и последующего применения) -----
 
@@ -70,7 +70,7 @@ Run multiple models simultaneously for different input data and quickly switch b
 
 - Or you can use your own data to reproduce this tutorial.
 
-If you already have the **labeled data** — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps](https://ecosystem.supervisely.com/import) ✅ from our Ecosystem. You will find there the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
+If you already have the **labeled data** — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps](https://ecosystem.supervisely.com/import) ✅ from our Ecosystem. There you will find the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
 
 <div class="apps-grid">
     <blog-app github="convert-yolov5-to-supervisely-format/master"></blog-app>
