@@ -3,186 +3,111 @@ title: "Multi-View Image Annotation: prepare multi-view images for efficient mod
 description: Boosting objectness with multi-view image annotation as the method for improving computer vision model trainig.
 cover: /blog/multi-view-images-annotation/cover.png
 tags:
-    - image annotation
-    - tutorials
+  - image annotation
+  - tutorials
 author: almaz
 date: 2023-07-21T12:17:00
 ---
 
-> INDEX TERM: multi-view image annotation, image annotation, multi-view data, machine learning, computer vision, labeling tool
-
 # Multi-View Image Annotation for Improving Computer Vision Model Training.
 
-or
+In the world of machine learning, the quest for **more accurate and robust models** continues to drive innovation. One promising approach that has gained considerable attention is **multi-view images annotation**.
 
-# Multi-View Image Annotation for Boosting Objectness
+It is a method that leverages multiple perspectives to **enhance the machine learning process**. By incorporating multiple perspectives, whether it's different data modalities or diverse feature spaces, multi-view learning enables us to uncover hidden patterns, improve accuracy, and boost the performance of machine learning models.
 
-😓 Some Challenges in Computer Vision Model Training:
-- Slow and costly training process due to insufficient annotated data.
-- Train models on typical datasets not addressing real-life problems.
+🚀 It's crucial to train models to recognize objects not just in standard views, but in various **real-world scenarios**, capturing multiple perspectives and enabling them **to tackle everyday challenges**.
 
-As the applications of computer vision models expand, so do the demands for diverse and high-quality **multi view annotated data** to accelerate training and enhance model performance. It's crucial to train models to recognize objects not just in standard views, but in various **real-world scenarios**, capturing **multiple perspectives** and enabling them to **tackle everyday challenges**.
+## 🌟 Simple multi-view annotation pipeline
 
-Instead of manually labeling large datasets, it will be more efficient to prepare a smaller, yet more suitable and diverse set of data from different perspectives.
+1. Upload your images with multiple perspective and angels images
+2. Assign one or multiple tags on images and easily organize photos.
+3. Efficiently AI-assisted or manual annotation.
+4. Train your models to identify objects from various angles and properties, mirroring real-life scenarios.
+5. Apply pre-trained model to all images and get predictions ✅
 
-🚀 Such datasets enable learning algorithms to better comprehend and generalize visual data, as well as **identify specific object features**, leading to improved **recognition accuracy**. 
-
-🚀 Training models on annotated images from multiple viewpoints allows them to **handle real-life scenarios** with diverse object placements and orientations.
-
-🚀 **Reduce the amount of time and money** used to create the needed annotations for training images. Multiview annotations only requires a few pictures to be hand labeled in order to automatically label hundreds more.
-
-🚀 Multi-view annotation approach significantly outperforms state-of-the-art labeling methods.
-
-# Choosing the Right Annotation Tools
-
-🌟 **Supervisely's advanced labeling tool** offers a groundbreaking feature that allows you to **group images based on a common tag**. 
-
-✅ This feature simplifies **AI-assisted** or **manual** annotations and makes it more efficient.
-
-✅ Train your models to identify objects from **various angles and properties**, mirroring **real-life scenarios**.
-
-✅ **Easily organize photos** on screen based on relevant tags (assign one or multiple tags on images for each group).
-
-
-![](beetles2.png)
-
+![](schema.png)
 
 In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
 
----- КОММЕНТ: тут видео ------
-<!-- <embed-youtube id="1rFeUfmT20k"></embed-youtube> -->
+![](yt.png)
 
+## Easily annotate grouped images in Supervisely labeling tool
 
-## Step 1. Prepare data for labeling
+**Fast labeling with interactive AI assistance ⚡**
 
-### Option 1. Use the **Import images groups** application and import data
+It is hard and time-consuming to segment objects over thousands of frames. Smart Tool helps you easily label the desired object in an image with just a few clicks because it is based on using various pre-trained neuron network (NN) models. All you need to do is frame the presumed object with a bounding box (bbox).
 
-- This is a more convenient way to group images if your dataset lacks annotations. 
-- Organize your images into a simple project structure according to the application's overview description.
+![](./ai.gif)
+
+Also, you can use shapes such as Bitmap, Polygon, and Rectangle for manual labeling purposes for easily correct some cases ✅.
+
+![](./manual.gif)
+
+Once your images are annotated, you can train model, apply pre-trained model weights and obtain predictions.
+
+---- (анимации процесса обучения модели и последующего применения) -----
+
+Run multiple models simultaneously for different input data and quickly switch between them - [connecting your computer with GPU](https://youtu.be/aO7Zc4kTrVg) and utilize popular pre-trained models for the Smart Labeling tool to improve efficiency.
+
+![](models.png)
+
+### Use the Import images groups app and prepare data for labeling.
+
+- Organize your images into a simple project structure according to the application's [overview description](https://ecosystem.supervisely.com/apps/import-images-groups?_ga=2.53824936.1042633755.1690183817-1574751671.1670221597#Overview).
+
 - We have prepared 🔗 [demo data](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip) for you, so it will help you to quickly reproduce the tutorial without a headache and get an experience and clear understanding of all steps in this tutorial.
-- You can use your own data to reproduce this tutorial.
 
  <div class="apps-grid">
     <blog-app github="import-images-groups/master"></blog-app>
 </div>
 
-### Option 2. Import labeled data and assign tags
+![](./import.gif)
 
- If you already have the labeled data — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps]( https://ecosystem.supervisely.com/import) from our Ecosystem. You will find there the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
+{% hint style="info" %} You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️ {% endhint %}
 
- <div class="apps-grid">
+- Or you can use your own data to reproduce this tutorial.
+
+If you already have the labeled data — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps](https://ecosystem.supervisely.com/import) ✅from our Ecosystem. You will find there the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
+
+<div class="apps-grid">
     <blog-app github="convert-yolov5-to-supervisely-format/master"></blog-app>
     <blog-app github="import-images-with-masks/master"></blog-app>
     <blog-app github="import-coco/master"></blog-app>
 </div>
 
- - **Required step** (for option 2): Create 1 or more tags with the `any_string` type in the project settings and assign each image with the value of the group name you want to distribute them into (tags allow enable grouping images in labeling tool).
+![](importapps.png)
 
- > You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️.
+After importing data, create and **assign tags to each image you want to group**. This will simplify the task of multi-image annotation.
 
-## Step 2. Explore images in the advanced Supervisely labeling tool
+### Game-changer features of Supervisely advanced labeling tool
 
-![](./adv_lbl_tool.gif)
-
-{% hint style="success" %}
-✨ **Supervisely advanced labeling tool** offers an intuitive interface for ease of use. Below is a brief overview.
-{% endhint %}
-
-![](./interface.jpg)
----- КОММЕНТ: тут классная картинка интерфейса с сеткой из картинок ----
-
-Here's an explanation of what you see in the image:
-
- 1. Panel featuring a button for capturing screenshots, a hotkeys map, layout settings, and history of operations.
-
- 2. Toolbar for navigating through images and working with annotations.
-
- 3. Workspace with the image or group of images.
-
- 4. Tabs that list images, objects, figures, tags, and their settings.
-
- 5. Additional display settings in the interface.
+![](adv_lbl_tool.gif)
 
 The interface is fully customizable. If you're not satisfied with the default layout of the main tabs, you can always switch to the panel variant and rearrange everything according to your convenience. This feature is often lacking in some web applications, which undoubtedly sets our tool apart in terms of usability.
 
-## Step 3. Enable image grouping option in settings
+{% hint style="success" %} ✨ Supervisely advanced labeling tool offers an intuitive interface for ease of use. {% endhint %}
 
-Easily switch the option and select one of the tags you created and assigned before. Images will quickly arrange into a grid, grouped by tag values.
+### About Tags
 
-![](./enable_group.gif)
--- КОММЕНТ: тут быстрая анимашка как включить эту опцию ----
+Tags are useful not only to annotate the data but also to **highlight the properties of objects or images**.
+In this use case, tag feature is crucial - it simplify the task of multi-image annotation.
 
-## Tags and Properties
-As you have already noticed, it is useful not only to annotate the data but also to add tags that **highlight the properties** of objects. 
-
-In this use case, tags also **crucial**. It simplify the task of multi-image annotation.
-
-![](./tags.png)
---- КОММЕНТ: тут красивый скрин по тэгам ----
-
-In data tabs, you can find and change **properties for objects, shapes, and images**. For example, you can set the shape type or add a new tag.
-
-{% hint style="info" %}
-You can create multiple tags and group images as you see fit. For example, in this case, creating additional tags like "color" and "body type" works similarly to filtering on a car sales website 🗒️
-{% endhint %}
-
---- КОММЕНТ: тут можно еще анимашку переключения между разными тэгами группировок -----
-
-## Step 4. Start labeling grouped images
-
-Now your images are grouped based on specific characteristics, annotating them becomes more manageable. 
-
-
-### Option 1. Fast labeling with interactive AI assistance
-
-It is hard and time-consuming to segment objects over thousands of frames. **Smart Tool** helps you easily label the desired object in an image with just a few clicks because it is based on using various pre-trained neuron network (NN) models. All you need to do is frame the presumed object with a bounding box (bbox).
-
-You can run multiple models simultaneously for different input data and quickly switch between them.
-
-  1. Connect your computer with GPU
-  Suppervisely allows you to connect your own computers with GPU to the platform and use them for model training, inference and evaluation ✨ **for FREE**. It is as simple as running a single command in the terminal on your machine.
-   - No vendor locks. You can connect your computer from home, office or cloud.
-   - Single command, no network configuration is needed.
-   - Private, open-sourced, proven by the community: 🌎 **1.5M+ docker pulls**.
-
-   Here is the video instruction that explains in detail how to do that:
-
-   <embed-youtube id="aO7Zc4kTrVg"></embed-youtube>
-
-  2. Deploy one of our pre-trained recognition models (your own model or models we prepared in Ecosystem).
-  Here are some of popular model.
-
-  --- КОММЕНТ: тут ускоренная анимация как создаются объекты при помощи смарт тулы ----------
-
-### Option 2. Manual annotation (creating rectangle, bitmap, polyline, polygon, or point)
-
-Also, you can use shapes such as **Bitmap**, **Polygon**, and **Rectangle** for labeling purposes.
-
-The **Polygon Tool** is used for annotating Polygon shapes on images if you don't need much precision.
-
-It's convenient to use the **Rectangle Tool** if you only want to mark an object without defining its outline.
-
- --- КОММЕНТ: тут ускоренная анимация как создаются 2-3 типа простых объектов (например бокс и маска) ----------
-
-
-## Collaborative teamwork
+### Collaborative teamwork
 
 Distribute annotation work between colleagues using [labeling jobs](https://docs.supervisely.com/labeling/jobs).
 
 Labeling Jobs and other collaboration tools in Supervisely helps to organize efficient work and complete the tasks like:
 
 1. Job management - the need to describe a particular task: what kind of objects to annotate and how
-
 2. Progress monitoring - tracking annotation status and reviewing submitted results
-
 3. Access permissions - limiting access only to specific datasets and classes within a single job
-
 4. And what's more, you can take a screenshot for urgent tasks without using additional apps and quickly share the link.
 
-
-## Export data
+### Export data
 
 At any moment of the working process, if you want to use these results elsewhere, you can export them using one of Supervisely Apps from Ecosystem. For example, here are just a few popular export Apps from Ecosystem:
+
+![](exportapps.png)
 
  <div class="apps-grid">
     <blog-app github="export-to-supervisely-format/master"></blog-app>
@@ -193,7 +118,6 @@ At any moment of the working process, if you want to use these results elsewhere
     <blog-app github="export-to-pascal-voc/master"></blog-app>
 </div>
 
-## To sum up
+### To sum up
 
-This toolset is truly convenient and stands out among its competitors, with significant potential for further enhancements. It is remarkably user-friendly and requires minimal setup to get started.
-
+Supervisely's toolset is remarkably user-friendly, requiring minimal setup to get started. Its potential for further enhancements makes it stand out among competitors, providing a truly convenient solution for multi-view image annotation and computer vision model training.
