@@ -44,7 +44,7 @@ Now you can start labeling your images with the help of our advanced labeling to
 
 ## 🌟 Simple multi-view annotation pipeline
 
-1. Upload your images with multiple perspective and angels.
+1. Upload your images with multiple perspectives and angels.
 2. Assign one or multiple tags on images and easily organize photos.
 3. Annotate efficiently with AI-assistance or manual tools.
 
