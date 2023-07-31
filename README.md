@@ -25,7 +25,7 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 
 ![](yt.png)
 
-### Game-changer features of Supervisely advanced labeling tool
+## Game-changer features of Supervisely advanced labeling tool
 
 {% hint style="success" %} 
 ✨ Supervisely advanced labeling tool offers an intuitive interface for ease of use.
