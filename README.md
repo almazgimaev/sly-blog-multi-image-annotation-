@@ -97,16 +97,7 @@ Accurate and robust models **significantly speed up the process of annotation** 
 
 - Or you can use your own data to reproduce this tutorial.
 
-If you already have the **labeled data** — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps](https://ecosystem.supervisely.com/import) ✅ from our Ecosystem. There you will find the imports for all popular data formats in computer vision. For example, here are just a few popular import Apps from Ecosystem:
-
-<div class="apps-grid">
-    <blog-app github="convert-yolov5-to-supervisely-format/master"></blog-app>
-    <blog-app github="import-images-with-masks/master"></blog-app>
-    <blog-app github="import-coco/master"></blog-app>
-</div>
-
---- тут иконки прилоежний ---
-![](importapps.png)
+If you already have the **labeled data** — just upload it into Supervisely platform using one of the [70+ import Supervisely Apps](https://ecosystem.supervisely.com/import) ✅ from our Ecosystem. There you will find the imports for all popular data formats in computer vision.
 
 After importing data, create and **assign tags to each image you want to group**. This will simplify the task of multi-image annotation.
 
