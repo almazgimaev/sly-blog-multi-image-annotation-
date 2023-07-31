@@ -67,6 +67,10 @@ It is hard and time-consuming to segment objects over thousands of frames. Smart
 
 ![](./ai.gif)
 
+Run multiple models simultaneously for different input data and quickly switch between them - [connecting your computer with GPU](https://youtu.be/aO7Zc4kTrVg) and utilize popular pre-trained models for the Smart Labeling tool to improve efficiency:
+
+![](models.png)
+
 ✔️ Also, you can use shapes such as Bitmap, Polygon, and Rectangle for manual labeling purposes to easily correct some cases.
 
 ![](./manual.gif)
@@ -76,9 +80,6 @@ Accurate and robust models **significantly speed up the process of annotation** 
 
 ---- (анимации процесса обучения модели и последующего применения) -----
 
-Run multiple models simultaneously for different input data and quickly switch between them - [connecting your computer with GPU](https://youtu.be/aO7Zc4kTrVg) and utilize popular pre-trained models for the Smart Labeling tool to improve efficiency:
-
-![](models.png)
 
 ### Use the Import images groups app to prepare data for labeling
 
