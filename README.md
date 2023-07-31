@@ -30,11 +30,9 @@ In this brief video, I will demonstrate how to annotate multiple photos of cars 
 It is a powerful tool that allows you to **annotate several images on one screen** without switching between tabs, **saving you time and effort**.
 {% endhint %}
 
-All you have to do is upload your images and assign one or more tags to them.
+✔️ All you have to do is upload your images and assign tags to them. The use of tags simplifies multi-image annotation, **enabling you to group images based on different attributes**, similar to filtering on a car sales website. 
 
-The use of tags simplifies multi-image annotation, **enabling you to group images based on different attributes**, similar to filtering on a car sales website. 
-
-This and many other features in our tool can be a real lifesaver when it comes to annotating data.
+This and many other features in our tool can be a real lifesaver when it comes to annotating data 🪄.
 
 
 -- тут анимация с демой группировки + парочки других фичей тулы --
