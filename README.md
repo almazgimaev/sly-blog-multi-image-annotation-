@@ -17,21 +17,47 @@ It is a method that leverages multiple perspectives to **enhance the machine lea
 
 🚀 It's crucial to train models to recognize objects not just in standard views, but in various **real-world scenarios**, capturing multiple perspectives and enabling them **to tackle everyday challenges**.
 
+But it can be difficult to find a convenient tool in which you can annotate data from different angles without switching between tabs each time. Such a tool would significantly speed up the annotation process, as you would not have to switch to a different angle each time and search for the desired object, which would waste time, concentration, and reduce efficiency.
+
+So, how do we get started with efficiently Multi-View Image Annotation? First, we need to choose the right annotation tools, and that's where **Supervisely's advanced labeling tool** comes in. 
+
+In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
+
+![](yt.png)
+
+### Game-changer features of Supervisely advanced labeling tool
+
+{% hint style="success" %} 
+✨ Supervisely advanced labeling tool offers an intuitive interface for ease of use.
+It is a powerful tool that allows you to **annotate several images on one screen** without switching between tabs, **saving you time and effort**.
+{% endhint %}
+
+All you have to do is upload your images and assign one or more tags to them.
+
+The use of tags simplifies multi-image annotation, **enabling you to group images based on different attributes**, similar to filtering on a car sales website. 
+
+This and many other features in our tool can be a real lifesaver when it comes to annotating data.
+
+
+-- тут анимация с демой группировки + парочки других фичей тулы --
+![](adv_lbl_tool.gif)
+
+
+Now you can start labeling your images with the help of our advanced labeling tool.
+
+
 ## 🌟 Simple multi-view annotation pipeline
 
-1. Upload your images with multiple perspective and angels images
+1. Upload your images with multiple perspective and angels.
 2. Assign one or multiple tags on images and easily organize photos.
-3. Efficiently AI-assisted or manual annotation.
-4. Train your models to identify objects from various angles and properties, mirroring real-life scenarios.
-5. Apply pre-trained model to all images and get predictions ✅
+3. Annotate efficiently with AI-assistance or manual tools.
+
+After annotating your images, you can train your models to identify objects from various angles and properties, mirroring real-life scenarios and apply pre-trained model to all images and get predictions ✅
 
 -- заменить схему --
 
 ![](schema.png)
 
-In this brief video, I will demonstrate how to annotate multiple photos of cars from various angles obtained from an online car sales website, using a unified grid for annotation.
-
-![](yt.png)
 
 ## Easily annotate grouped images in Supervisely advanced labeling tool
 
@@ -83,15 +109,6 @@ If you already have the **labeled data** — just upload it into Supervisely pla
 
 After importing data, create and **assign tags to each image you want to group**. This will simplify the task of multi-image annotation.
 
-### Game-changer features of Supervisely advanced labeling tool
-
--- тут анимация с демой группировки + парочки других фичей тулы --
-![](adv_lbl_tool.gif)
-
-The Supervisely tool's interface is fully customizable, allowing you to arrange the main tabs according to your convenience, making it highly user-friendly. The use of tags simplifies multi-image annotation, enabling you to group images based on different attributes, similar to filtering on a car sales website.
-
-{% hint style="success" %} ✨ Supervisely advanced labeling tool offers an intuitive interface for ease of use. {% endhint %}
-
 ### About Tags
 
 Tags are useful not only to annotate the data but also to **highlight the properties of objects or images**.
@@ -112,21 +129,6 @@ Labeling Jobs and other collaboration tools in Supervisely helps to organize eff
 3. Access permissions - limiting access only to specific datasets and classes within a single job
 4. And what's more, you can take a screenshot for urgent tasks without using additional apps and quickly share the link.
 
-### Export data
-
-At any moment of the working process, if you want to use these results elsewhere, you can export them using one of Supervisely Apps from Ecosystem. For example, here are just a few popular export Apps from Ecosystem:
-
---- тут иконки прилоежний экспорта ---
-![](exportapps.png)
-
- <div class="apps-grid">
-    <blog-app github="export-to-supervisely-format/master"></blog-app>
-    <blog-app github="export-to-yolov8/master"></blog-app>
-    <blog-app github="export-as-masks/master"></blog-app>
-    <blog-app github="export-to-coco/master"></blog-app>
-    <blog-app github="export-to-coco-mask/master"></blog-app>
-    <blog-app github="export-to-pascal-voc/master"></blog-app>
-</div>
 
 ### To sum up
 
