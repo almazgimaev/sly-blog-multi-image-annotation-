@@ -172,32 +172,30 @@ You can also automate the process of working with images groups using Supervisel
 pip install supervisely
 ```
 
-You can learn more about it in our [Developer Portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images/multispectral-images), but here we'll just show how you can upload your images groups with just a few lines of code.
+You can learn more about it in our [Developer Portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images/multiview-images), but here we'll just show how you can upload your images groups with just a few lines of code.
 
 ```python
-TAG_NAME = 'car'
-project_id = 123456
-dataset_id = 654321
+import os
+from dotenv import load_dotenv
+import supervisely as sly
 
-# Add a new tag to the project meta (if it doesn't exist yet).
-project_meta = sly.ProjectMeta.from_json(api.project.get_meta(project.id))
-tag_meta = sly.TagMeta(TAG_NAME, sly.TagValueType.ANY_STRING)
-if tag_meta not in project_meta.tag_metas:
-    project_meta = project_meta.add_tag_meta(new_tag_meta=tag_meta)
-api.project.update_meta(id=project.id, meta=project_meta)
+# Learn more about authentication - https://developer.supervisely.com/getting-started/basics-of-authentication
+load_dotenv(os.path.expanduser("~/supervisely.env"))
 
-# Enable images grouping in the project settings.
-api.project.images_grouping(project.id, enable=True, tag_name=TAG_NAME)
+workspace_id = 942
 
-# Preparing 2 groups of images to upload.
-group_name_1 = 'audi'
-group_name_2 = 'bmw'
-paths_1 = ['path/to/audi_01.png', 'path/to/audi_02.png']
-paths_2 = ['path/to/bmw_01.png', 'path/to/bmw_02.png']
+api = sly.Api.from_env()
 
-# Uploading grouped images to Supervisely.
-image_infos_1 = api.image.upload_multiview_images(dataset_id, TAG_NAME, group_name_1, paths_1)
-image_infos_2 = api.image.upload_multiview_images(dataset_id, TAG_NAME, group_name_2, paths_2)
+project = api.project.create(workspace_id, "Grouped cars", change_name_if_conflict=True)
+dataset = api.dataset.create(project.id, "ds0")
+
+api.project.set_multiview_settings(project.id)
+
+images_paths_1 = ['path/to/audi_01.png', 'path/to/audi_02.png']
+images_paths_2 = ['path/to/bmw_01.png', 'path/to/bmw_02.png']
+
+api.image.upload_multiview_images(dataset.id, "audi", images_paths_1)
+api.image.upload_multiview_images(dataset.id, "bmw", images_paths_2)
 ```
 
 In the example above we uploaded two groups of images.
