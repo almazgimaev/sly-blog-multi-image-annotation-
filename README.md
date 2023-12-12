@@ -47,7 +47,7 @@ In this video tutorial, you will learn how to import images and label them in Su
 
 Just imagine you have a dataset of scenes with different angles and perspectives. For example, there are 5-10 images for each scene in the dataset (from multiple perspectives). Each image contains several objects of different classes. You need to annotate all of them, but it is time-consuming to switch between images and select the desired class for each object to annotate. Moreover, it is hard to keep in mind all the details about objects you are annotating.
 
-Here is the solution: group images by tags and annotate them simultaneously on one screen. It will save you time and effort.
+Here is the solution: just group images by tag values and annotate them simultaneously on one screen. It will save you time and effort.
 
 <!-- Here is two options how you can simplify and speed up the annotation process:
     - Group images on one screen
@@ -65,7 +65,7 @@ It requires to assign tags to images before using grouped display (below you can
 
 If you need more than a bunch of marked pixels on an image and associate some extra information with annotations or files, you can use [tags](https://docs.supervisely.com/data-organization/projects/tags). Tags are key-value pairs that can be assigned to any object or image. Tags can be used to store any information about the object, such as its name, type, or any other properties of objects or images that you want to highlight.
 
-In this use case, **string type tags are required** to group images by tags and annotate them simultaneously on one screen.
+In this use case, **string type tags are required** to group images by tag values and annotate them simultaneously on one screen.
 
 ![](tags.png) <!-- !!! change this image -->
 
@@ -74,7 +74,7 @@ In this use case, **string type tags are required** to group images by tags and 
 🌟 Simple multi-view annotation pipeline:
 
 1. Prepare images for import.
-2. Import images using [Import images groups](https://ecosystem.supervisely.com/apps/import-images-groups?utm_source=blog) app. It will automatically assign tags and group images by these tags. (Alternatively, you can manually upload images and assign string type tag to each image you want to group).
+2. Import images using [Import images groups](https://ecosystem.supervisely.com/apps/import-images-groups?utm_source=blog) app. It will automatically assign tags and group images by these tags. Alternatively, you can manually upload images and assign string type tag to each image you want to group.
 3. Annotate efficiently with AI-assistance or manual tools.
 
 ## Step 1. Prepare Images for Import
@@ -122,7 +122,7 @@ After preparing your images for import, follow these steps to easily import imag
 
 ## Step 3. Explore Multi-View Display and Easily Annotate Grouped Images
 
-After importing images by Import images groups app, you will see that images are grouped by tags and displayed on one screen. If you want to change the group settings, you can do it in the project settings or right in the Image Labeling Tool.
+After importing images by "Import images groups" app, you will see that images are grouped on the screen by tag values. If you want to change the group settings, you can do it in the project settings or right in the Image Labeling Tool.
 
 ![](enable_groups.jpg)
 
