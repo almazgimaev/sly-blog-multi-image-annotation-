@@ -196,8 +196,8 @@ paths_1 = ['path/to/audi_01.png', 'path/to/audi_02.png']
 paths_2 = ['path/to/bmw_01.png', 'path/to/bmw_02.png']
 
 # Uploading grouped images to Supervisely.
-image_infos_1 = api.image.upload_grouped_images(dataset_id, TAG_NAME, group_name_1, paths_1)
-image_infos_2 = api.image.upload_grouped_images(dataset_id, TAG_NAME, group_name_2, paths_2)
+image_infos_1 = api.image.upload_multiview_images(dataset_id, TAG_NAME, group_name_1, paths_1)
+image_infos_2 = api.image.upload_multiview_images(dataset_id, TAG_NAME, group_name_2, paths_2)
 ```
 
 In the example above we uploaded two groups of images.
