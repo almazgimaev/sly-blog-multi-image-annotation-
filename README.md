@@ -164,6 +164,47 @@ Labeling Jobs and other collaboration tools in Supervisely helps to organize eff
 3. Access permissions - limiting access only to specific datasets, classes, **tags** within a single job
 4. And what's more, you can take a screenshot for urgent tasks without using additional apps and quickly share the link.
 
+## Automate workflow with Python SDK
+
+You can also automate the process of working with images groups using Supervisely Python SDK.
+
+```sh
+pip install supervisely
+```
+
+You can learn more about it in our [Developer Portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images/multispectral-images), but here we'll just show how you can upload your images groups with just a few lines of code.
+
+```python
+TAG_NAME = 'car'
+project_id = 123456
+dataset_id = 654321
+
+# Add a new tag to the project meta (if it doesn't exist yet).
+project_meta = sly.ProjectMeta.from_json(api.project.get_meta(project.id))
+tag_meta = sly.TagMeta(TAG_NAME, sly.TagValueType.ANY_STRING)
+if tag_meta not in project_meta.tag_metas:
+    project_meta = project_meta.add_tag_meta(new_tag_meta=tag_meta)
+api.project.update_meta(id=project.id, meta=project_meta)
+
+# Enable images grouping in the project settings.
+api.project.images_grouping(project.id, enable=True, tag_name=TAG_NAME)
+
+# Preparing 2 groups of images to upload.
+group_name_1 = 'audi'
+group_name_2 = 'bmw'
+paths_1 = ['path/to/audi_01.png', 'path/to/audi_02.png']
+paths_2 = ['path/to/bmw_01.png', 'path/to/bmw_02.png']
+
+# Uploading grouped images to Supervisely.
+image_infos = api.image.upload_grouped_images(dataset_id, TAG_NAME, group_name_1, paths_1)
+image_infos = api.image.upload_grouped_images(dataset_id, TAG_NAME, group_name_2, paths_2)
+```
+
+In the example above we uploaded two groups of images.
+Before or after uploading images, we also need to enable images grouping in the project settings.
+
+There's so much you can do with them using our Python SDK! You can find a set of Python SDK tutorials to work with images on our [Developer Portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images).
+
 ### To sum up
 
 Supervisely Image Labeling Tool is remarkably user-friendly, requiring minimal setup to get started. Its potential for further enhancements makes it stand out among competitors, providing a truly convenient solution for diverse use cases, including multi-view image annotation.
