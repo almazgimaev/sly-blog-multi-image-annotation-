@@ -13,10 +13,14 @@ if sly.is_development():
 
 api = sly.Api()
 workspace_id = sly.env.workspace_id()
-TAG_NAME = "car"
+TAG_NAME = "car"  # tag name for images grouping
+
+# ======================================================================================
+# ======================================================================================
+# ======================================================================================
 
 # OPTION 1: upload images, add tags and enable images grouping by tag values
-ALL_IMAGES_DIR = "./cars catalog/all_images"
+ALL_IMAGES_DIR = "src/cars catalog/all_images"
 
 project_name = os.path.basename(os.path.normpath(ALL_IMAGES_DIR))
 project = api.project.create(workspace_id, project_name, change_name_if_conflict=True)
@@ -67,7 +71,7 @@ api.project.images_grouping(project.id, enable=True, tag_name=TAG_NAME)
 # ======================================================================================
 
 # OPTION 2: upload images as a group
-SPLITTED_IMAGES_DIR = "./cars catalog/splitted_images"
+SPLITTED_IMAGES_DIR = "src/cars catalog/splitted_images"
 
 # create project and dataset
 project_name = os.path.basename(os.path.normpath(SPLITTED_IMAGES_DIR))
