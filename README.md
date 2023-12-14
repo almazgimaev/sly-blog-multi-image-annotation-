@@ -98,8 +98,6 @@ In this example, we have 2 groups of images: `group_name_1` (3 images) and `grou
 
 - We have prepared 🔗 [demo data](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip) for you, so it will help you to quickly reproduce the tutorial without a headache and get an experience and clear understanding of all the steps in this tutorial.
 
-Alternatively, you can manually upload images using the [Import Images](https://ecosystem.supervisely.com/apps/import-images?utm_source=blog) application, assign string-type tags to each image you want to group and enable the multi-view mode in the Image Labeling Tool settings.
-
 ## Step 2. Import Images
 
 After preparing your images for import, follow these steps to easily import image groups into Supervisely:
@@ -114,11 +112,19 @@ After preparing your images for import, follow these steps to easily import imag
 
 ![Running the import-images-groups application](./import.gif)
 
-## Step 3. Explore Multi-View Display and Easily Annotate Grouped Images
+Alternatively, you can also enable multiview in the Image Labeling Tool interface (corresponding tags should be assigned to images before):
 
-After importing images using the "Import images groups" app, you will see that images are grouped on the screen by tag values. If you want to change the group settings, you can do it in the Image Labeling Tool.
+![enable_multiview](https://github.com/supervisely-ecosystem/import-multiview-images-tutorial/assets/79905215/6c45e0d4-a79d-4cac-a529-f1be25e4b058)
 
-![](enable_groups.jpg)
+## Step 3. Explore Multi-View Display
+
+After importing images using the "Import images groups" app, you will see that images are grouped on the screen by tag values.
+
+![Grouped view in the labeling interface](https://github.com/supervisely-ecosystem/import-multiview-images-tutorial/assets/79905215/f8b7203a-cfbd-4771-a76e-22086d7b0d18)
+
+As you can see, the images in the Labeling tool are grouped in the same way as in your images in folders (images from one folder are combined into one group). When importing, each image from the folders will be assigned tags with the same values, which allows them to be grouped into one group.
+
+## Step 4. Multi-View Annotation
 
 **⚡ Fast labeling with interactive AI assistance.**
 
@@ -141,7 +147,7 @@ You can also train your model and use it in the Smart Tool. Explore blog posts d
 - [Unleash The Power of Domain Adaptation - How to Train Perfect Segmentation Model on Synthetic Data with HRDA](https://supervisely.com/blog/unleash-the-power-of-domain-adaptation-with-HRDA-synthetic-cracks-segmentation/)
 - [Lessons Learned From Training a Segmentation Model On Synthetic Data](https://supervisely.com/blog/lessons-learned-from-training-a-segmentation-model-on-synthetic-data/)
 
-**Manual annotation tools**
+**Manual annotation**
 
 Use different tools such as [Bounding Box](https://supervisely.com/blog/bounding-box-annotation-for-object-detection/), [Mask Pen](https://supervisely.com/blog/mask-pen-tool/), [Polygon](https://supervisely.com/blog/how-to-use-polygon-anotation-tool-for-image-segmentation/), [Brush](https://supervisely.com/blog/brush/), Polyline, and Graph (keypoint) for manual labeling purposes (✔️ or to easily correct some cases).
 
