@@ -24,8 +24,6 @@ That's where **Supervisely Image Labeling Tool** comes in and solves this by pro
 
 **!!!!!!!!!!!!!! GIF with multiple images on one screen**
 
-![Multi-view annotation](https://github.com/supervisely-ecosystem/import-multiview-images-tutorial/assets/79905215/db53b636-8e7d-4d0b-b1c2-5bb674fa530f)
-
 There are two ways to annotate images in Supervisely Image Labeling Tool:
 
 - using the SmartTool to annotate images with AI assistance ([here is the guide on how to use Smart Tool](https://supervisely.com/blog/smarttool-annotation/))
@@ -134,7 +132,7 @@ Combine the power of AI and grouped displaying to annotate images faster and mor
 
 <!-- ![](./ai.gif) -->
 
-![AI-assisted annotation](./ai2.gif)
+![AI-assisted multi-view annotation](./ai2.gif)
 
 The Smart Tool is a powerful tool that allows you to annotate images with AI assistance. It offers users the opportunity to utilize a variety of neural network algorithms integrated within the Supervisely platform. This encompasses robust models like [RITM](https://ecosystem.supervisely.com/apps/ritm-interactive-segmentation/supervisely?utm_source=blog), [Segment Anything](https://ecosystem.supervisely.com/apps/serve-segment-anything-hq/supervisely_integration/serve?utm_source=blog), and more, with ongoing efforts to enhance our [Ecosystem](https://ecosystem.supervisely.com/) through the integration of new models. It's essential to emphasize that the effectiveness, precision, and speed of segmentation are strongly influenced by the selection of the model. Therefore, we recommend that you try out different models to find the one that best suits your needs.
 
@@ -153,7 +151,9 @@ You can also train your model and use it in the Smart Tool. Explore blog posts d
 
 Use different tools such as [Bounding Box](https://supervisely.com/blog/bounding-box-annotation-for-object-detection/), [Mask Pen](https://supervisely.com/blog/mask-pen-tool/), [Polygon](https://supervisely.com/blog/how-to-use-polygon-anotation-tool-for-image-segmentation/), [Brush](https://supervisely.com/blog/brush/), Polyline, and Graph (keypoint) for manual labeling purposes (✔️ or to easily correct some cases).
 
-![Manual annotation process](./manual.gif)
+<!-- ![Manual annotation process](./manual.gif) -->
+
+![Manual multi-view annotation](https://github.com/supervisely-ecosystem/import-multiview-images-tutorial/assets/79905215/db53b636-8e7d-4d0b-b1c2-5bb674fa530f)
 
 ## Collaborate teamwork
 
