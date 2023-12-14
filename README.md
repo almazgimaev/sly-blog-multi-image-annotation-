@@ -118,7 +118,7 @@ Alternatively, you can also enable multiview in the Image Labeling Tool interfac
 
 ## Step 3. Explore Multi-View Display
 
-After importing images using the "Import images groups" app, you will see that images are grouped on the screen by tag values.
+After importing images using the "Import images groups" app, you will see that images are grouped on the screen by tag values. Use `LEFT` and `RIGHT` arrow keys to navigate between groups.
 
 ![Grouped view in the labeling interface](https://github.com/supervisely-ecosystem/import-multiview-images-tutorial/assets/79905215/f8b7203a-cfbd-4771-a76e-22086d7b0d18)
 
