@@ -18,7 +18,7 @@ In the world of machine learning, the quest for more accurate and robust models 
 
 To achieve this, multi-view image annotation is gaining considerable attention. It leverages multiple perspectives, incorporates diverse data modalities and feature spaces. This enables learning algorithms to better comprehend and generalize visual data, identifying specific object features for improved recognition accuracy.
 
-However, the process of annotating multiple images can be time-consuming and tedious, especially when you have to switch between images to annotate each image separately.
+However, the process of annotating multiple images can be time-consuming and tedious, especially when you have to switch between images to annotate them separately.
 
 That's where **Supervisely Image Labeling Tool** comes in and solves this by providing a convenient feature to annotate multiple images on one screen without switching between tabs, saving you time and effort.
 
@@ -31,7 +31,7 @@ There are two ways to annotate images in Supervisely Image Labeling Tool:
 
 ## Video tutorial
 
-In this video tutorial, you will learn how to import images and label them in Supervisely Labeling Tool using grouped display. Here's what we'll cover:
+In this video tutorial, you will learn how to import images and annotate them in Supervisely Labeling Tool using grouped display. Here's what we'll cover:
 
 1. Importing groups of images into Supervisely
 
@@ -49,7 +49,7 @@ In this video tutorial, you will learn how to import images and label them in Su
 Let's say you have a dataset with 500 images (100 scenes, each with 5 images from various angles) showcasing several object classes. The task at hand – annotating all these scenes – poses a challenge in other solutions, with constant image switching and class selection proving both time-consuming and mentally taxing.
 
 **Here's where our solution shines:**
-Just group images by tag values – for our example, assign corresponding tags to all 5 images of each scene (e.g., `scene_1`, `scene_2`, `scene_3`, etc.).
+Just group images by tag values; for our example, assign corresponding tags to all 5 images of each scene (e.g., `scene_1`, `scene_2`, `scene_3`, etc.).
 By activating the Multiple Image View Mode in Supervisely Image Labeling Tool, you can annotate multiple images simultaneously on one screen.
 That's it! Now it is only 100 multi-view scenes instead of 500 separate images, and you don't need to switch between images and select the desired class for each object to annotate, keeping in mind all the details about the objects you are annotating.
 
@@ -65,9 +65,9 @@ In this use case, **string-type tags are required** to group images by tag value
 
 ![](tags.png) <!-- !!! change this image -->
 
-## How to work with Multiview images in Supervisely
+## How to work with Multi-view images in Supervisely
 
-Supervisely provides a convenient workflow, from import using the Application or Python SDK to annotation with the Labeling Tool, enabling the viewing and annotation of images as groups. Follow the brief guide below to import grouped images and multiview annotate them in Supervisely.
+Supervisely provides a convenient workflow, from import using the Application or Python SDK to annotation with the Labeling Tool, enabling viewing and annotation of images as groups. Follow the brief guide below to import grouped images and multi-view annotate them in Supervisely.
 
 ## Step 1. Prepare Images for Import
 
@@ -98,7 +98,7 @@ In this example, we have 2 groups of images: `group_name_1` (3 images) and `grou
 
 - We have prepared 🔗 [demo data](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip) for you, so it will help you to quickly reproduce the tutorial without a headache and get an experience and clear understanding of all the steps in this tutorial.
 
-Alternatively, you can manually upload images using the Import Images application, assign string-type tags to each image you want to group and enable the multiview mode in the Image Labeling Tool settings.
+Alternatively, you can manually upload images using the [Import Images](https://ecosystem.supervisely.com/apps/import-images?utm_source=blog) application, assign string-type tags to each image you want to group and enable the multi-view mode in the Image Labeling Tool settings.
 
 ## Step 2. Import Images
 
@@ -116,7 +116,7 @@ After preparing your images for import, follow these steps to easily import imag
 
 ## Step 3. Explore Multi-View Display and Easily Annotate Grouped Images
 
-After importing images by "Import images groups" app, you will see that images are grouped on the screen by tag values. If you want to change the group settings, you can do it in the project settings or right in the Image Labeling Tool.
+After importing images using the "Import images groups" app, you will see that images are grouped on the screen by tag values. If you want to change the group settings, you can do it in the Image Labeling Tool.
 
 ![](enable_groups.jpg)
 
@@ -151,7 +151,7 @@ Use different tools such as [Bounding Box](https://supervisely.com/blog/bounding
 
 How else can you speed up the annotation process?
 
-✅ Create a team and invite your colleagues to [labeling job](https://docs.supervisely.com/labeling/jobs), and work together on the same project.
+✅ Create a team and invite your colleagues to [labeling jobs](https://docs.supervisely.com/labeling/jobs), and work together on the same project.
 
 Check out our blog [posts](https://supervisely.com/blog/tags/collaboration/) on how to effectively perform annotation at scale using Labeling Jobs, Labeling Queues and Labeling Consensus approaches.
 
@@ -176,7 +176,7 @@ You can learn more about it in our [Developer Portal](https://developer.supervis
 project_id = 123456
 dataset_id = 654321
 
-# enable multiview display in project settings
+# enable multi-view display in project settings
 api.project.set_multiview_settings(project_id)
 
 images_paths = ['path/to/audi_01.png', 'path/to/audi_02.png']
