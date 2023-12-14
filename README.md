@@ -23,6 +23,7 @@ However, the process of annotating multiple images can be time-consuming and ted
 That's where **Supervisely Image Labeling Tool** comes in and solves this by providing a convenient feature to annotate multiple images on one screen without switching between tabs, saving you time and effort.
 
 **!!!!!!!!!!!!!! GIF with multiple images on one screen**
+![Multi-view annotation](https://github.com/supervisely-ecosystem/import-multiview-images-tutorial/assets/79905215/e8d16a56-94ab-4bc9-954e-c698d8406f2b)
 
 There are two ways to annotate images in Supervisely Image Labeling Tool:
 
@@ -63,7 +64,7 @@ If you need more than a bunch of marked pixels on an image and associate some ex
 
 In this use case, **string-type tags are required** to group images by tag values and annotate them simultaneously on one screen.
 
-![](tags.png) <!-- !!! change this image -->
+![Tags in Supervisely](tags.png) <!-- !!! change this image -->
 
 ## How to work with Multi-view images in Supervisely
 
@@ -112,9 +113,9 @@ After preparing your images for import, follow these steps to easily import imag
 
 ![Running the import-images-groups application](./import.gif)
 
-Alternatively, you can also enable multiview in the Image Labeling Tool interface (corresponding tags should be assigned to images before):
+Alternatively, you can also enable multi-view in the Image Labeling Tool interface (corresponding tags should be assigned to images before):
 
-![enable_multiview](https://github.com/supervisely-ecosystem/import-multiview-images-tutorial/assets/79905215/6c45e0d4-a79d-4cac-a529-f1be25e4b058)
+![Enable multi view ](https://github.com/supervisely-ecosystem/import-multiview-images-tutorial/assets/79905215/6c45e0d4-a79d-4cac-a529-f1be25e4b058)
 
 ## Step 3. Explore Multi-View Display
 
@@ -132,13 +133,13 @@ Combine the power of AI and grouped displaying to annotate images faster and mor
 
 <!-- ![](./ai.gif) -->
 
-![](./ai2.gif)
+![AI-assisted annotation](./ai2.gif)
 
 The Smart Tool is a powerful tool that allows you to annotate images with AI assistance. It offers users the opportunity to utilize a variety of neural network algorithms integrated within the Supervisely platform. This encompasses robust models like [RITM](https://ecosystem.supervisely.com/apps/ritm-interactive-segmentation/supervisely?utm_source=blog), [Segment Anything](https://ecosystem.supervisely.com/apps/serve-segment-anything-hq/supervisely_integration/serve?utm_source=blog), and more, with ongoing efforts to enhance our [Ecosystem](https://ecosystem.supervisely.com/) through the integration of new models. It's essential to emphasize that the effectiveness, precision, and speed of segmentation are strongly influenced by the selection of the model. Therefore, we recommend that you try out different models to find the one that best suits your needs.
 
 Read the guide on [how to use the Smart Tool](https://supervisely.com/blog/smarttool-annotation/) to annotate images with AI assistance.
 
-![](models.png)
+![Integrated models in Supervisely](models.png)
 
 You can also train your model and use it in the Smart Tool. Explore blog posts dedicated to this topic:
 
@@ -151,7 +152,7 @@ You can also train your model and use it in the Smart Tool. Explore blog posts d
 
 Use different tools such as [Bounding Box](https://supervisely.com/blog/bounding-box-annotation-for-object-detection/), [Mask Pen](https://supervisely.com/blog/mask-pen-tool/), [Polygon](https://supervisely.com/blog/how-to-use-polygon-anotation-tool-for-image-segmentation/), [Brush](https://supervisely.com/blog/brush/), Polyline, and Graph (keypoint) for manual labeling purposes (✔️ or to easily correct some cases).
 
-![](./manual.gif)
+![Manual annotation process](./manual.gif)
 
 ## Collaborate teamwork
 
