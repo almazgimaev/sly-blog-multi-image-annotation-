@@ -46,7 +46,7 @@ In this video tutorial, you will learn how to import images and label them in Su
 ## The reason why you should use grouped display
 
 **Highlight the problem**:
-Let's say you have a dataset with 500 images of scenes from various angles, each with 5 images showcasing several object classes. The task at hand – annotating all these scenes – poses a challenge in other solutions, with constant image switching and class selection proving both time-consuming and mentally taxing.
+Let's say you have a dataset with 500 images (100 scenes, each with 5 images from various angles) showcasing several object classes. The task at hand – annotating all these scenes – poses a challenge in other solutions, with constant image switching and class selection proving both time-consuming and mentally taxing.
 
 **Here's where our solution shines:**
 Just group images by tag values – for our example, assign corresponding tags to all 5 images of each scene (e.g., `scene_1`, `scene_2`, `scene_3`, etc.).
