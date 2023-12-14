@@ -24,10 +24,10 @@ That's where **Supervisely Image Labeling Tool** comes in and solves this by pro
 
 **!!!!!!!!!!!!!! GIF with multiple images on one screen**
 
-Both manual and AI-assisted annotation tools are available in Supervisely Image Labeling Tool, allowing you to annotate images in a variety of ways:
+There are two ways to annotate images in Supervisely Image Labeling Tool:
 
-- use the Smart Tool to annotate images with AI assistance ([here is the guide how to use Smart Tool](https://supervisely.com/blog/smarttool-annotation/))
-- use different tools such as [Bounding Box](https://supervisely.com/blog/bounding-box-annotation-for-object-detection/), [Mask Pen](https://supervisely.com/blog/mask-pen-tool/), [Polygon](https://supervisely.com/blog/how-to-use-polygon-anotation-tool-for-image-segmentation/), [Brush](https://supervisely.com/blog/brush/), Polyline, and Graph (keypoint) for manual labeling purposes (or to easily correct some cases).
+- using the SmartTool to annotate images with AI assistance ([here is the guide on how to use Smart Tool](https://supervisely.com/blog/smarttool-annotation/))
+- using [Bounding Box](https://supervisely.com/blog/bounding-box-annotation-for-object-detection/), [Mask Pen](https://supervisely.com/blog/mask-pen-tool/), [Polygon](https://supervisely.com/blog/how-to-use-polygon-anotation-tool-for-image-segmentation/), [Brush](https://supervisely.com/blog/brush/), Polyline, and Graph (keypoint) for manual labeling purposes (or to easily correct some cases).
 
 ## Video tutorial
 
@@ -37,7 +37,7 @@ In this video tutorial, you will learn how to import images and label them in Su
 
 2. Exploring the multi-view display functionality in the Image Labeling Tool.
 
-3. Manually annotating group of images.
+3. Manually annotating groups of images.
 
 4. Speeding up the labeling process with AI-assistance using the [Supervisely Smart Tool](https://supervisely.com/blog/smarttool-annotation/)
 
@@ -45,37 +45,29 @@ In this video tutorial, you will learn how to import images and label them in Su
 
 ## The reason why you should use grouped display
 
-Just imagine you have a dataset of scenes with different angles and perspectives. For example, there are 5-10 images for each scene in the dataset (from multiple perspectives). Each image contains several objects of different classes. You need to annotate all of them, but it is time-consuming to switch between images and select the desired class for each object to annotate. Moreover, it is hard to keep in mind all the details about objects you are annotating.
+**Highlight the problem**:
+Let's say you have a dataset with 500 images of scenes from various angles, each with 5 images showcasing several object classes. The task at hand – annotating all these scenes – poses a challenge in other solutions, with constant image switching and class selection proving both time-consuming and mentally taxing.
 
-Here is the solution: just group images by tag values and annotate them simultaneously on one screen. It will save you time and effort.
+**Here's where our solution shines:**
+Just group images by tag values – for our example, assign corresponding tags to all 5 images of each scene (e.g., `scene_1`, `scene_2`, `scene_3`, etc.).
+By activating the Multiple Image View Mode in Supervisely Image Labeling Tool, you can annotate multiple images simultaneously on one screen.
+That's it! Now it is only 100 multi-view scenes instead of 500 separate images, and you don't need to switch between images and select the desired class for each object to annotate, keeping in mind all the details about the objects you are annotating.
 
-<!-- Here is two options how you can simplify and speed up the annotation process:
-    - Group images on one screen
-    - Collaborate with your team and distribute the annotation process between colleagues
-
-Both of these options you can easily use at the same time to label your data simultaneously and efficiently. -->
+Look how convenient and intuitive it can be, and in this tutorial we'll learn how to use it.
 
 **!!!!!!!!!!!!!! GIF with grouped display**
-
-{% hint style="info" %}
-It requires to assign tags to images before using grouped display (below you can find the detailed instruction how to do it).
-{% endhint %}
 
 ## About Tags in Supervisely
 
 If you need more than a bunch of marked pixels on an image and associate some extra information with annotations or files, you can use [tags](https://docs.supervisely.com/data-organization/projects/tags). Tags are key-value pairs that can be assigned to any object or image. Tags can be used to store any information about the object, such as its name, type, or any other properties of objects or images that you want to highlight.
 
-In this use case, **string type tags are required** to group images by tag values and annotate them simultaneously on one screen.
+In this use case, **string-type tags are required** to group images by tag values and annotate them simultaneously on one screen.
 
 ![](tags.png) <!-- !!! change this image -->
 
-## How to annotate grouped images in Supervisely
+## How to work with Multiview images in Supervisely
 
-🌟 Simple multi-view annotation pipeline:
-
-1. Prepare images for import.
-2. Import images using [Import images groups](https://ecosystem.supervisely.com/apps/import-images-groups?utm_source=blog) app. It will automatically assign tags and group images by these tags. Alternatively, you can manually upload images and assign string type tag to each image you want to group.
-3. Annotate efficiently with AI-assistance or manual tools.
+Supervisely provides a convenient workflow, from import using the Application or Python SDK to annotation with the Labeling Tool, enabling the viewing and annotation of images as groups. Follow the brief guide below to import grouped images and multiview annotate them in Supervisely.
 
 ## Step 1. Prepare Images for Import
 
@@ -104,11 +96,13 @@ In this use case, **string type tags are required** to group images by tag value
 
 In this example, we have 2 groups of images: `group_name_1` (3 images) and `group_name_2` (6 images). When you import this project, the application will automatically assign predefined tag to these images with `group_name_1` and `group_name_2` values respectively. Then, the application will group images by these tag values. The remaining 4 images are not grouped and will be imported without any tags.
 
-- We have prepared 🔗 [demo data](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip) for you, so it will help you to quickly reproduce the tutorial without a headache and get an experience and clear understanding of all steps in this tutorial.
+- We have prepared 🔗 [demo data](https://github.com/supervisely-ecosystem/import-images-groups/releases/download/v0.0.1/cars.catalog.zip) for you, so it will help you to quickly reproduce the tutorial without a headache and get an experience and clear understanding of all the steps in this tutorial.
+
+Alternatively, you can manually upload images using the Import Images application, assign string-type tags to each image you want to group and enable the multiview mode in the Image Labeling Tool settings.
 
 ## Step 2. Import Images
 
-After preparing your images for import, follow these steps to easily import images groups into Supervisely:
+After preparing your images for import, follow these steps to easily import image groups into Supervisely:
 
 <blog-app github="import-images-groups/master"></blog-app>
 
@@ -131,6 +125,7 @@ After importing images by "Import images groups" app, you will see that images a
 Combine the power of AI and grouped displaying to annotate images faster and more efficiently. [Connect your computer with GPU](https://docs.supervisely.com/agents/connect-your-computer) and utilize popular pre-trained models for the Smart Labeling tool to improve efficiency
 
 <!-- ![](./ai.gif) -->
+
 ![](./ai2.gif)
 
 The Smart Tool is a powerful tool that allows you to annotate images with AI assistance. It offers users the opportunity to utilize a variety of neural network algorithms integrated within the Supervisely platform. This encompasses robust models like [RITM](https://ecosystem.supervisely.com/apps/ritm-interactive-segmentation/supervisely?utm_source=blog), [Segment Anything](https://ecosystem.supervisely.com/apps/serve-segment-anything-hq/supervisely_integration/serve?utm_source=blog), and more, with ongoing efforts to enhance our [Ecosystem](https://ecosystem.supervisely.com/) through the integration of new models. It's essential to emphasize that the effectiveness, precision, and speed of segmentation are strongly influenced by the selection of the model. Therefore, we recommend that you try out different models to find the one that best suits your needs.
@@ -139,7 +134,7 @@ Read the guide on [how to use the Smart Tool](https://supervisely.com/blog/smart
 
 ![](models.png)
 
-You can also train your own model and use it in the Smart Tool. Explore blog posts dedicated to this topic:
+You can also train your model and use it in the Smart Tool. Explore blog posts dedicated to this topic:
 
 - [How to Train Smart Tool for Precise Cracks Segmentation in Industrial Inspection](https://supervisely.com/blog/industrial-inspection-cracks-segmentation/)
 - [Automate manual labeling with custom interactive segmentation model for agricultural images](https://supervisely.com/blog/custom-smarttool-wheat/)
@@ -158,49 +153,40 @@ How else can you speed up the annotation process?
 
 ✅ Create a team and invite your colleagues to [labeling job](https://docs.supervisely.com/labeling/jobs), and work together on the same project.
 
-Labeling Jobs and other collaboration tools in Supervisely helps to organize efficient work and complete the tasks like:
+Check out our blog [posts](https://supervisely.com/blog/tags/collaboration/) on how to effectively perform annotation at scale using Labeling Jobs, Labeling Queues and Labeling Consensus approaches.
+
+Labeling Jobs and other collaboration tools in Supervisely helps to organize efficient work and complete tasks like:
 
 1. Job management - the need to describe a particular task: what kind of objects to annotate and how
 2. Progress monitoring - tracking annotation status and reviewing submitted results
-3. Access permissions - limiting access only to specific datasets, classes, **tags** within a single job
+3. Access permissions - limiting access only to specific datasets, classes, and **tags** within a single job
 4. And what's more, you can take a screenshot for urgent tasks without using additional apps and quickly share the link.
 
 ## Automate workflow with Python SDK
 
-You can also automate the process of working with images groups using Supervisely Python SDK.
+You can also automate the process of working with image groups using Supervisely Python SDK.
 
 ```sh
 pip install supervisely
 ```
 
-You can learn more about it in our [Developer Portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images/multiview-images), but here we'll just show how you can upload your images groups with just a few lines of code.
+You can learn more about it in our [Developer Portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images/multiview-images), but here we'll just show how you can upload your image groups with just a few lines of code.
 
 ```python
-import os
-from dotenv import load_dotenv
-import supervisely as sly
+project_id = 123456
+dataset_id = 654321
 
-# Learn more about authentication - https://developer.supervisely.com/getting-started/basics-of-authentication
-load_dotenv(os.path.expanduser("~/supervisely.env"))
+# enable multiview display in project settings
+api.project.set_multiview_settings(project_id)
 
-workspace_id = 942
+images_paths = ['path/to/audi_01.png', 'path/to/audi_02.png']
 
-api = sly.Api.from_env()
-
-project = api.project.create(workspace_id, "Grouped cars", change_name_if_conflict=True)
-dataset = api.dataset.create(project.id, "ds0")
-
-api.project.set_multiview_settings(project.id)
-
-images_paths_1 = ['path/to/audi_01.png', 'path/to/audi_02.png']
-images_paths_2 = ['path/to/bmw_01.png', 'path/to/bmw_02.png']
-
-api.image.upload_multiview_images(dataset.id, "audi", images_paths_1)
-api.image.upload_multiview_images(dataset.id, "bmw", images_paths_2)
+# upload group of images
+api.image.upload_multiview_images(dataset_id, "audi", images_paths)
 ```
 
 In the example above we uploaded two groups of images.
-Before or after uploading images, we also need to enable images grouping in the project settings.
+Before or after uploading images, we also need to enable image grouping in the project settings.
 
 There's so much you can do with them using our Python SDK! You can find a set of Python SDK tutorials to work with images on our [Developer Portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images).
 
