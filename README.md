@@ -1,6 +1,6 @@
 ---
-title: "Multi-View Image Annotation: prepare multi-view images for efficient model training"
-description: Learn how to use multi-view display in Supervisely Image Labeling Tool to efficiently annotate images from different angles to improve computer vision model training.
+title: "Multi-View Image Annotation for efficient model training"
+description: Learn how to use multi-view display in Supervisely Image Labeling Tool to efficiently annotate multi-view images on one screen.
 cover: /blog/multi-view-images-annotation/cover.png
 tags:
   - tutorials
