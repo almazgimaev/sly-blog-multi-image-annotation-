@@ -181,9 +181,6 @@ pip install supervisely
 You can learn more about it in our [Developer Portal](https://developer.supervisely.com/getting-started/python-sdk-tutorials/images/multiview-images), but here we'll just show how you can upload your image groups with just a few lines of code.
 
 ```python
-project_id = 123456
-dataset_id = 654321
-
 # enable multi-view display in project settings
 api.project.set_multiview_settings(project_id)
 
