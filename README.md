@@ -59,6 +59,8 @@ Look how convenient and intuitive it can be, and in this tutorial we'll learn ho
 
 ## About Tags in Supervisely
 
+1
+
 If you need more than a bunch of marked pixels on an image and associate some extra information with annotations or files, you can use [tags](https://docs.supervisely.com/data-organization/projects/tags). Tags are key-value pairs that can be assigned to any object or image. Tags can be used to store any information about the object, such as its name, type, or any other properties of objects or images that you want to highlight.
 
 In this use case, **string-type tags are required** to group images by tag values and annotate them simultaneously on one screen.
