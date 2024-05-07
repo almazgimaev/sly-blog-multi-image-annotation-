@@ -37,7 +37,6 @@ In this video tutorial, you will learn how to import images and annotate them in
 
 4. Speeding up the labeling process with AI-assistance using the [Supervisely Smart Tool](https://supervisely.com/blog/smarttool-annotation/)
 
-**!!!!!!!!!!!!!! Youtube video tutorial**
 
 ## The reason why you should use grouped display
 
