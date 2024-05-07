@@ -10,7 +10,7 @@ author: almaz
 date: 2023-12-12T12:17:00
 ---
 
-**!!!!!!!!!!!!!! Poster image**
+**!!!!!!!!!!!!!! Poster image**1
 
 ## Intoduction
 
