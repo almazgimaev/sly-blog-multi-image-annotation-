@@ -20,8 +20,6 @@ However, the process of annotating multiple images can be time-consuming and ted
 
 That's where **Supervisely Image Labeling Tool** comes in and solves this by providing a convenient feature to annotate multiple images on one screen without switching between tabs, saving you time and effort.
 
-**!!!!!!!!!!!!!! GIF with multiple images on one screen**
-
 There are two ways to annotate images in Supervisely Image Labeling Tool:
 
 - using the SmartTool to annotate images with AI assistance ([here is the guide on how to use Smart Tool](https://supervisely.com/blog/smarttool-annotation/))
