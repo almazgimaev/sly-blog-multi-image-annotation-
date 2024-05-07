@@ -67,6 +67,8 @@ If you need more than a bunch of marked pixels on an image and associate some ex
 
 In this use case, **string-type tags are required** to group images by tag values and annotate them simultaneously on one screen.
 
+3
+
 ![Tags in Supervisely](tags.png) <!-- !!! change this image -->
 
 ## How to work with Multi-view images in Supervisely
