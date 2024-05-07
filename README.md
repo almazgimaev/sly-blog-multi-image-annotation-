@@ -10,8 +10,6 @@ author: almaz
 date: 2023-12-12T12:17:00
 ---
 
-**!!!!!!!!!!!!!! Poster image**
-
 ## Intoduction
 
 In the world of machine learning, the quest for more accurate and robust models continues to drive innovation. It is crucially important for models to recognize objects not just in standard views but in various real-world scenarios, capturing multiple perspectives to **tackle everyday challenges efficiently**.
